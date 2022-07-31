@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Sprint 2</title>
+</head>
+<body>
+    <header>
+        <img class="logo-alura" src="./img/Vector.svg" alt="Logo Alura">
+    </header>
+    <div class="inicio">
+        <button class="boton-azul" id="btn-iniciar-juego">Iniciar Juego</button>
+        <button class="boton-blanco" id="btn-agregar-palabra">Agregar Palabra</button>
+    </div>
+    <div class="juego hide">
+        <canvas id="ahorcado-canvas" height="600px" width="1000"></canvas>
+        <div class="gano hide">
+            <h2 class="ganador">Ganaste!</h2>
+        </div>
+        <div class="perdio hide">
+            <h2 class="perdedor">Perdiste!</h2>
+        </div>
+        <button class="boton-azul" id="btn-reIniciar-juego">Reiniciar Juego</button>
+        <button class="boton-blanco" id="volver">Inicio</button>
+    </div>
+    <div class="agregarPalabra hide">
+        <form id="nuevaPalabra">
+            <div class="elementos">
+                <label for="palabra" class="label-agregar">Ingrese palabra nueva</label>
+                <br>
+                <input type="text" id="palabra" name="palabra">
+            </div>
+            <div class="error hide"> 
+                La palabra solo puede contener letras
+            </div>
+            <div class="exito hide">
+                ¡Palabra agregada!
+            </div>
+            <button class="boton-azul" id="btnAgregaPalabra">Agregar Palabra</button>
+        </form>    
+        <button class="boton-blanco" id="volverDesdeAgregar">Volver</button>
+    </div>
+    <footer>
+        <p>© Challenge Oracle ONE - By Daniel Vence</p>
+    </footer>
+    <script src="./js/juego.js"> </script>
+</body>
+</html>
